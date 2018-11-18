@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block extra-link %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+{% endblock %}
+
+{% block title %}Shop{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>The Book Shop</h1>
+        <p>The adventure starts right here.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-header bg-dark text-white">
+            <h3>Ebook</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">£XX.XX</h4>
+            <p class="card-text">Follow John Baverbrook's journey electronically</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Own it forever
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Instant delivery
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Compatible with any device
+              </li>
+            </ul>
+            <a href="#" class="btn btn-danger btn-block mt-2">Buy It Now</a>
+          </div>
+          <div class="card-footer text-muted">
+            Delivered instantly via email once purchased
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-header bg-dark text-white">
+            <h3>Hard Copy</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">£XX.XX</h4>
+            <p class="card-text">Follow John Baverbrook's journey the conventional way</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Own it forever
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> Receive it within X days
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-check"></i> A great addition to any bookshelf
+              </li>
+            </ul>
+            <a href="#" class="btn btn-danger btn-block mt-2">Buy It Now</a>
+          </div>
+          <div class="card-footer text-muted">
+            Delivered by post within X days
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="p-4 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center">testimonials</h2>
+    <div class="row text-center">
+      <div class="col">
+        <div class="slider">
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+              </p>
+              <footer class="blockquote-footer">John Doe From
+                <cite title="Company 1">Company 1</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+              </p>
+              <footer class="blockquote-footer">Sam Smith From
+                <cite title="Company 2">Company 2</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+              </p>
+              <footer class="blockquote-footer">Meghan Williams From
+                <cite title="Company 3">Company 3</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra-script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+{% endblock %}

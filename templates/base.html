@@ -7,12 +7,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% block extra-link %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/all.css' %}">
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/lightbox.css' %}" />
   <link rel="stylesheet" href="{% static 'css/ekko-lightbox.css' %}" />
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <title>Nubian Quest</title>
+  <title>{% block title %}Nubian Quest{% endblock %}</title>
 </head>
 
 <body>
@@ -31,7 +32,9 @@
 <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'js/lightbox.min.js' %}"></script>
 <script src="{% static 'js/ekko-lightbox.min.js' %}"></script>
+{% block extra-script %}{% endblock %}
 <script src="{% static 'js/main.js' %}"></script>
+
 
 </body>
 </html>

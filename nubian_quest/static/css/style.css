@@ -16,7 +16,7 @@ body {
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url('https://res.cloudinary.com/virtuestudios/image/upload/q_40,h_800,c_fit/v1541206389/nubian_quest/traveller.jpg') no-repeat center center fixed;
+  background: url('https://res.cloudinary.com/virtuestudios/image/upload/q_40,h_2000,c_fit/v1541206389/nubian_quest/traveller.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -42,7 +42,7 @@ body {
 
 #page-header {
   height: 200px;
-  background: url('https://res.cloudinary.com/virtuestudios/image/upload/q_40,h_800,c_fit/v1541206373/nubian_quest/coverart.jpg') no-repeat center center fixed;
+  background: url('https://res.cloudinary.com/virtuestudios/image/upload/q_40,h_2000,c_fit/v1541206373/nubian_quest/coverart.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   border-bottom: 1px #eee solid;

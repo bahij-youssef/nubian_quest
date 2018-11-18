@@ -1,7 +1,84 @@
 {% extends 'base.html' %}
 
+{% block title %} About Us {% endblock %}
+
 {% block content %}
 
-<h1>About</h1>
+<!-- PAGE HEADER -->
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>About Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>The Author: Phil Tittensor</h1>
+        <p>Although I have been the author of numerous non-fiction articles, I have, for many years, wanted to write
+          a work of
+          fiction. This website is largely devoted to my first project, 'The Nubian Quest'. The book was inspired by
+          a
+          backpacking adventure in Egypt, married to an idea that had been in my subconscious for many years. The
+          Nubian Quest
+          page tells a little of the book's story, from conception to finished work. I hope it may provide some
+          inspiration for
+          those of us who are sure we have a book in us, but never seem to be able to commit the idea to paper (or a
+          hard
+          drive). My blog is intended to chart a contemporaneous voyage to what I hope will be my first fictional
+          publication.
+          I'm just at the start of that particular journey, which I'm sure will be laden with set backs before the
+          book arrives
+          in print or on your kindle! Self publishing or via a literary agent? Hmm, I wonder. Still, I digress, this
+          is
+          supposed to be the page that tells you about me, so here goes.</p>
+        <p>I'd like to think I'm still a thirty-something, but sadly the calendar disagrees! I'm married to Sarah, a
+          beautiful,
+          intelligent and supportive girl (is that a pc term at forty?) who is my absolute rock. I have a son, James,
+          who like
+          most eleven year olds is interested in almost everything except what Dad is doing on the computer. He did
+          'borrow' a
+          few sentences of an early chapter for school homework once, so I guess that's a start. Despite the
+          advancing years, I
+          still try to play squash twice a week with a great bunch of lads, most of whom I've known for many years. I
+          also live
+          for travel - never happier than with a backpack and a vague idea of the eventual destination.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{{author}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{book}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+      </div>
+      <div class="col-md-6">
+        <h1>The Novel: Nubian Quest</h1>
+        <p>The novel is what I would describe as a thinking man’s sci-fi. It is set in modern-day Egypt, though the
+          story harks
+          back to the time of the Pharaohs. It is based on the story of Akhenaten and Nefertiti, parents of the child
+          king
+          Tutankhamen. Akhenaten ruled Egypt for a mere fourteen years. In that time, he transformed Egyptian society
+          and
+          beliefs. How he achieved that feat forms the basis of The Nubian Quest. Similar choices, if presented
+          today, would
+          have even more radical consequences. Without losing its dynamism, or slowing the action, The Nubian Quest
+          poses a
+          moral question for those of us who find ourselves living in a dangerously unpredictable world, early in the
+          twenty-first century.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock %}

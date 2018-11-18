@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'nubian_quest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nqdb',
+        'USER': 'postgres',
+        'PASSWORD': 'By240788',
+        'HOST': 'localhost',
     }
 }
 
