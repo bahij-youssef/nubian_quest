@@ -32,7 +32,7 @@
         {% else %}
             <li class="nav-item">
         {% endif %}
-          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="{% url 'blog' %}" class="nav-link">Blog</a>
         </li>
         {% if 'contact' in request.path %}
             <li class="nav-item active">
