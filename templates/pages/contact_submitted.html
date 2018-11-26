@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block navbar %} {% endblock %}
+
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>Contact Us</h1>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Contact form submitted successfully.</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          Thank you for getting in touch. We will respond to your query as soon as possible.
+        </p>
+
+        <hr>
+
+        <a href="{% url 'index' %}" class="btn btn-danger btn-lg mb-5">Back to Home page</a>
+        
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+{% endblock %}
+
+{% block footer %} {% endblock %}

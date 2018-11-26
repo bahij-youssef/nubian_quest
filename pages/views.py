@@ -36,7 +36,3 @@ def about(request):
 def shop(request):
 
     return render(request, 'pages/shop.html')
-
-
-def contact(request):
-    return render(request, 'pages/contact.html')
