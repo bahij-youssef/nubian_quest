@@ -7,7 +7,12 @@ from authors.models import Author
 class Post(models.Model):
     author = models.ForeignKey(Author, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=400)
+    slug = models.SlugField(max_length=400, unique=True, null=True)
+    keywords = models.TextField(blank=True)
+    #category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     content = HTMLField()
+    headline = models.TextField(null=True)
+    is_draft = models.BooleanField(default=False)
     date_published = models.DateTimeField(default=datetime.now)
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')
     photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)

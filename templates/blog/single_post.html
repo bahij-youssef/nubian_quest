@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}{{post.title}}{% endblock %}
+
+{% block content %}
+
+<!-- SINGLE POST -->
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>{{post.title}}</h1>
+        <small class="text-muted">
+            Written by {{post.author.first_name}} {{post.author.last_name}} | {{post.date_published | naturalday}}
+        </small>
+        {{post.content | truncatewords_html:300 | safe}}
+        <img src="{{post.photo_1.url}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+      </div>
+      <div class="col-md-6">
+        <img src="{{post.photo_main.url}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+      </div>
+      {% if post.photo_1 %}
+        <div class="col-md-6">
+            <img src="{{post.photo_1.url}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+        </div>
+      {% endif %}
+      {% if post.photo_2 %}
+        <div class="col-md-6">
+            <img src="{{post.photo_2.url}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+        </div>
+      {% endif %}
+      {% if post.photo_3 %}
+        <div class="col-md-6">
+            <img src="{{post.photo_3.url}}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+{% endblock %}
