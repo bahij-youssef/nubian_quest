@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %}Contact{% endblock %}
 
@@ -44,29 +45,29 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="First Name" name="first_name">
+                  {{form.first_name|as_crispy_field}}
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Last Name" name="last_name">
+                  {{form.last_name|as_crispy_field}}
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email" name="email">
+                  {{form.email|as_crispy_field}}
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Phone Number" name="phone_number">
+                  {{form.phone_number|as_crispy_field}}
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Message" name="message"></textarea>
+                  {{form.message|as_crispy_field}}
                 </div>
               </div>
               <div class="col-md-12">

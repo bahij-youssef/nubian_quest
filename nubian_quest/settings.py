@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'cloudinary',
     'tinymce',
+    'crispy_forms',
     'django.contrib.humanize',
     'pages.apps.PagesConfig',
     'blog.apps.BlogConfig',
@@ -173,3 +174,13 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
+
+# CRISPY FORMS CONFIG
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# EMAIL CONFIG
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'nubianquest01@gmail.com'
+EMAIL_HOST_PASSWORD = '86&$&aCr&hHA'
+EMAIL_USE_TLS = True
