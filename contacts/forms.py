@@ -1,4 +1,4 @@
-from django.forms import ModelForm
+from django.forms import ModelForm, TextInput, EmailInput, Textarea
 from .models import Contact
 
 
@@ -7,10 +7,25 @@ class ContactForm(ModelForm):
         model = Contact
         fields = ['first_name', 'last_name',
                   'email', 'phone_number', 'message']
-        # widgets = {
-        #     'first_name': _('First Name'),
-        #     'last_name': _('Last Name'),
-        #     'email': _('Email'),
-        #     'phone_number': _('Phone Number (optional)'),
-        #     'message': _('Message'),
-        # }
+        widgets = {
+            'first_name': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'First Name',
+            }),
+            'last_name': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Last Name',
+            }),
+            'phone_number': TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Phone Number (optional)',
+            }),
+            'email': EmailInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'Email',
+            }),
+            'message': Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Message',
+            }),
+        }

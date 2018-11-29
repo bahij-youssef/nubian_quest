@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'pages.apps.PagesConfig',
     'blog.apps.BlogConfig',
+    'newsletter.apps.NewsletterConfig',
     'contacts.apps.ContactsConfig',
     'authors.apps.AuthorsConfig',
     'django.contrib.admin',
