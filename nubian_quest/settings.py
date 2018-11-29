@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_dzpx@7%h6hh)h)+1-0zcf^t(k#_r5py6^#i8zov$l(grvbmc+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -186,3 +186,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'nubianquest01@gmail.com'
 EMAIL_HOST_PASSWORD = '86&$&aCr&hHA'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
