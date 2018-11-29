@@ -7,6 +7,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% block meta-tags %}
+  <meta name="description" content="Nubian Quest, a thinking man’s sci-fi novel authored by Phil Tittensor, is set in modern-day Egypt though the story harks back to the time of the Pharaohs."/>
+  <meta name="author" content="Virtue Studios">
+  <meta name="copyright" content="Nubian Quest, Phil Tittensor">
+  {% endblock %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130111648-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130111648-1');
+  </script>
+
   {% block extra-link %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/all.css' %}">
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
