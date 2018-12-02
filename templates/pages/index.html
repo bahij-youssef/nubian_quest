@@ -65,7 +65,7 @@
           attempted.</p>
       </div>
       <div class="col-lg-8 mb-4 text-center">
-        <img src="{{image3}}" alt="" class="img-fluid d-none d-lg-block rounded">
+        <img src="{{image3}}" alt="" class="img-fluid d-block rounded">
       </div>
     </div>
   </div>
@@ -88,10 +88,7 @@
 <section id="info" class="py-3">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <img src="{{image1_original}}" alt="" class="img-fluid d-none d-lg-block rounded my-5">
-      </div>
-      <div class="col-md-6 align-self-center">
+      <div class="col-md-6 order-sm-12 align-self-center">
         <h3>The Inspiration</h3>
         <p>It was November 2010 when Sarah (my wife) and I had spent the
           afternoon on the
@@ -111,6 +108,9 @@
         <br><br>
         <h5>Read the rest of this post on our blog</h5>
         <a href="{% url 'blog' %}" class="btn btn-outline-danger btn-lg">Read More</a>
+      </div>
+      <div class="col-md-6 order-sm-1">
+        <img src="{{image1_original}}" alt="" class="img-fluid d-block rounded my-5">
       </div>
     </div>
   </div>

@@ -100,4 +100,8 @@ body {
   .mb-resp {
     margin-bottom: 1rem;
   }
+
+  .about-img {
+    margin-top: 0px;
+  }
 }
