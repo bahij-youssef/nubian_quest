@@ -8,36 +8,40 @@
 
   <!-- Page Content -->
   <div class="container">
-
     <div class="row">
-
       <!-- Post Content Column -->
       <div class="col-lg-8">
-
         <!-- Title -->
         <h1 class="mt-4">{{post.title}}</h1>
-
         <!-- Author -->
         <p class="lead">
           by
           {{post.author.first_name}} {{post.author.last_name}}
         </p>
-
         <hr>
-
         <!-- Date/Time -->
-        <p>Posted on {{post.date_published | naturalday}}</p>
-
+        <div class="row">
+            <div class="col-lg-8">
+                <p>Posted on {{post.date_published | naturalday}}</p>
+            </div>
+            <div class="col-lg-4">
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_whatsapp"></a>
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
+            </div>
+        </div>
         <hr>
-
         <!-- Preview Image -->
         <img class="img-fluid rounded" src="{{post.photo_main.url}}" alt="">
-
         <hr>
-
         <!-- Post Content -->
         {{post.content | safe}}
-
         {% if post.photo_1 %}
             <div id="photo_1">
                 <hr>
@@ -62,13 +66,22 @@
             </div>
         {% endif %}
 
+        {% if post.audio_mp3 or post.audio_ogg %}
+        <div class="row">
+            <div class="col-md-6 offset-md-3 my-5">
+                <audio controls>
+                    <source src="{{post.audio_mp3.url}}" type="audio/mp3">
+                    <source src="{{post.audio_ogg.url}}" type="audio/ogg">
+                    <p>Your browser doesn't support HTML5 audio.</p>
+                </audio>
+            </div>
+        </div>
+        {% endif %}
+        <br>
         <a href="{% url 'blog' %}" class="btn btn-danger btn-lg mb-5">Back to blog</a>
-        
       </div>
-
     </div>
     <!-- /.row -->
-
   </div>
   <!-- /.container -->
 
